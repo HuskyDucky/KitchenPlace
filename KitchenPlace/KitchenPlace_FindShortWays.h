@@ -8,21 +8,23 @@
     Menashe Rosemberg   Israel +972-52-323-0538
     Copyright(c) 2019      All rights reserved.
 
-    Software developed to SQLLink internal use only.
+    Software distributed under the MIT License is distributed on an "AS IS" BASIS,
+    NO WARRANTIES OR CONDITIONS OF ANY KIND, explicit or implicit.
 **/
 #ifndef KITCHENPLACE_SHORTWAYS_H
 #define KITCHENPLACE_SHORTWAYS_H
 
+#include <list>
+
 #include "KitchenPlace.h"
 #include "KitchenPlace_ManageDirections.h"
 
-#include <list>
 using RevisionType = list<LinCol>;
 
 struct ShortWayFinder {
        ShortWayFinder(const LinCol& EmpLC, Matrix& tMapLC);
 
-    void SetDistancesOnDMap();
+    void SetDistancesOnMap();
 
     private:
         const LinCol& Emp;

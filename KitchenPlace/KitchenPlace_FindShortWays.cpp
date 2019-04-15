@@ -8,7 +8,8 @@
     Menashe Rosemberg   Israel +972-52-323-0538
     Copyright(c) 2019      All rights reserved.
 
-    Software developed to SQLLink internal use only.
+    Software distributed under the MIT License is distributed on an "AS IS" BASIS,
+    NO WARRANTIES OR CONDITIONS OF ANY KIND, explicit or implicit.
 **/
 #include "KitchenPlace_FindShortWays.h"
 
@@ -18,7 +19,7 @@ ShortWayFinder::ShortWayFinder(const LinCol& EmpLC,
                                                 tMap(tMapLC),
                                                 D(tMapLC, EmpLC.first, EmpLC.second) {}
 
-void ShortWayFinder::SetDistancesOnDMap() {
+void ShortWayFinder::SetDistancesOnMap() {
      LinCol lincol = this->D.CurrPosition();
 
      while (lincol.first != LCLimit) {
@@ -48,14 +49,14 @@ void ShortWayFinder::SetDistancesOnDMap() {
 }
 
 LinCol ShortWayFinder::SetNextStep(const uint8_t Direction, LinCol NextStep) const {
-    switch (Direction) {
-           case Turn::RT: NextStep.second++; break;
-           case Turn::LF: NextStep.second--; break;
-           case Turn::DW: NextStep.first++; break;
-           default      : NextStep.first--;
-    }
+       switch (Direction) {
+              case Turn::RT: NextStep.second++; break;
+              case Turn::LF: NextStep.second--; break;
+              case Turn::DW: NextStep.first++; break;
+              default      : NextStep.first--;
+       }
 
-    return NextStep;
+       return NextStep;
 }
 
 void ShortWayFinder::ReviewExceptionPoints() {
@@ -94,54 +95,3 @@ bool ShortWayFinder::IsItNOTNear2AnPointAlreadyAdded2Review(const LinCol& lincol
 
       return true;
 }
-
-/*    Revision.remove_if([&](const LinCol& lincol){ return !DoesItReallyNeedReview(lincol, Revision, this->tMap); });
-
-    for (uint32_t tlin = 0; tlin < this->tMap.size(); ++tlin) {
-        cout << '\n';
-        for (uint32_t tcol = 0; tcol < this->tMap[tlin].size(); ++tcol)
-            switch (this->tMap[tlin][tcol]) {
-                   case    0: cout << "   "; break;
-                   case WALL: cout << "WWW"; break;
-                   default  : cout << setw(3) << this->tMap[tlin][tcol];
-        }
-    }
-    cin.get();
-
-    for (uint32_t tlin = 0; tlin < this->tMap.size(); ++tlin) {
-        cout << '\n';
-        for (uint32_t tcol = 0; tcol < this->tMap[tlin].size(); ++tcol) {
-            bool DRAW = true;
-            for (auto& Rev : Revision)
-                if (tlin == Rev.first && tcol == Rev.second) {
-                    DRAW = false;
-                    cout << "_X_";
-                    break;
-                }
-
-            if (DRAW)
-                switch (this->tMap[tlin][tcol]) {
-                        case    0: cout << "   "; break;
-                        case WALL: cout << "WWW"; break;
-                        default  : cout << setw(3) << this->tMap[tlin][tcol];
-                }
-        }
-    }
-    cin.get();
-*/
-
-/*
-    ReviewExceptionPoints(Revision, this->tMap);
-
-    for (uint32_t tlin = 0; tlin < this->tMap.size(); ++tlin) {
-        cout << '\n';
-        for (uint32_t tcol = 0; tcol < this->tMap[tlin].size(); ++tcol)
-            switch (this->tMap[tlin][tcol]) {
-                   case    0: cout << "   "; break;
-                   case WALL: cout << "WWW"; break;
-                   default  : cout << setw(3) << this->tMap[tlin][tcol];
-        }
-    }
-    cin.get();
-*/
-

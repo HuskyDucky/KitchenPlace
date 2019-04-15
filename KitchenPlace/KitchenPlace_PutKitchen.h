@@ -8,18 +8,15 @@
     Menashe Rosemberg   Israel +972-52-323-0538
     Copyright(c) 2019      All rights reserved.
 
-    Software developed to SQLLink internal use only.
+    Software distributed under the MIT License is distributed on an "AS IS" BASIS,
+    NO WARRANTIES OR CONDITIONS OF ANY KIND, explicit or implicit.
 **/
 #ifndef KITCHENSHOW_H
 #define KITCHENSHOW_H
 
-//#include <list>
-#include <vector>
 #include <iostream>
 
 #include "KitchenPlace.h"
-
-using namespace std;
 
 void PutKitchen(vector<pair<LinCol, Matrix>>& Employees);
 

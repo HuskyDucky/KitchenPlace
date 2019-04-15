@@ -1,14 +1,15 @@
 /**
     File    : KitchenPlace_PutKitchen.cpp
     Author  : Menashe Rosemberg
-    Created : 2019.03.29            Version: 20190331.2
+    Created : 2019.03.29            Version: 20190331.3
 
     Show the result map within the best places to install the kitchen on room nearest to all employees
 
     Menashe Rosemberg   Israel +972-52-323-0538
     Copyright(c) 2019      All rights reserved.
 
-    Software developed to SQLLink internal use only.
+    Software distributed under the MIT License is distributed on an "AS IS" BASIS,
+    NO WARRANTIES OR CONDITIONS OF ANY KIND, explicit or implicit.
 **/
 #include "KitchenPlace_PutKitchen.h"
 
@@ -24,8 +25,8 @@ void PutKitchen(vector<pair<LinCol, Matrix>>& Employees) {
      //Find the best places
      uint16_t Cheaper = WALL-1;
      //list<LinCol> TheBestLocations;
-     for (uint32_t Lin = 0; Lin < Employees[0].second.size(); ++Lin)
-         for (uint32_t Col = 0; Col < Employees[0].second[0].size(); ++Col) //{
+     for (LCType Lin = 0; Lin < Employees[0].second.size(); ++Lin)
+         for (LCType Col = 0; Col < Employees[0].second[0].size(); ++Col) //{
              if (Employees[0].second[Lin][Col] < Cheaper) //{
                 Cheaper = Employees[0].second[Lin][Col];
                 //TheBestLocations.clear();
@@ -35,9 +36,9 @@ void PutKitchen(vector<pair<LinCol, Matrix>>& Employees) {
          //}
 
      //Put the kitchen on the original map and show it
-     for (uint32_t Lin = 0; Lin < Employees[0].second.size(); ++Lin) {
+     for (LCType Lin = 0; Lin < Employees[0].second.size(); ++Lin) {
          cout << '\n';
-         for (uint32_t Col = 0; Col < Employees[0].second[0].size(); ++Col)
+         for (LCType Col = 0; Col < Employees[0].second[0].size(); ++Col)
              if (Employees[0].second[Lin][Col] == WALL)
                      cout << 'W';
              else if (Employees[0].second[Lin][Col] == Cheaper)

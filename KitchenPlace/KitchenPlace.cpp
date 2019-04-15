@@ -8,7 +8,8 @@
     Menashe Rosemberg   Israel +972-52-323-0538
     Copyright(c) 2019      All rights reserved.
 
-    Software developed to SQLLink internal use only.
+    Software distributed under the MIT License is distributed on an "AS IS" BASIS,
+    NO WARRANTIES OR CONDITIONS OF ANY KIND, explicit or implicit.
 **/
 #include "KitchenPlace_ReadMap.h"
 #include "KitchenPlace_MapEmployees.h"
@@ -35,13 +36,13 @@ int main() {
     auto Employees = CreateEnployeesList(sMap);
 
     if (Employees.empty())
-        cerr << "\n\nNo Employees were found in this map\n\n";
+       cerr << "\n\nNo Employees were found in this map\n\n";
 
     CheckEmptySpaces(Employees[0].second);
 
     for (auto& Emp : Employees) {
         ShortWayFinder SWF(Emp.first, Emp.second);
-        SWF.SetDistancesOnDMap();
+        SWF.SetDistancesOnMap();
     }
 
     PutKitchen(Employees);
