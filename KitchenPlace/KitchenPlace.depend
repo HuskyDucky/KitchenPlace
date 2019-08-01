@@ -7,7 +7,7 @@
 	<stack>
 	"KitchenPlace.h"
 
-1555345362 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace.h
+1555346362 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace.h
 	<limits>
 	<vector>
 	<cinttypes>
@@ -23,24 +23,25 @@
 	<string>
 	"KitchenPlace.h"
 
-1554477287 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_MapEmployees.cpp
+1555346363 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_MapEmployees.cpp
 	"KitchenPlace_MapEmployees.h"
 
-1555345435 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_MapEmployees.h
+1555346363 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_MapEmployees.h
 	<string>
 	"KitchenPlace.h"
 
-1555345158 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_PutKitchen.cpp
+1555346363 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_PutKitchen.cpp
 	"KitchenPlace_PutKitchen.h"
 
-1555345336 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_PutKitchen.h
+1555346362 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_PutKitchen.h
 	<iostream>
 	"KitchenPlace.h"
 
-1554049272 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ReadMap.cpp
+1564035618 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ReadMap.cpp
 	"KitchenPlace_ReadMap.h"
+	"KitchenPlace_ERROR.h"
 
-1555345249 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ReadMap.h
+1555346363 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ReadMap.h
 	<vector>
 	<string>
 	<fstream>
@@ -50,12 +51,13 @@
 1554043883 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_WallInfo.cpp
 	"KitchenPlace_WallInfo.h"
 
-1555345879 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace.cpp
+1564035474 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace.cpp
 	"KitchenPlace_ReadMap.h"
 	"KitchenPlace_MapEmployees.h"
 	"KitchenPlace_ManageDirections.h"
 	"KitchenPlace_FindShortWays.h"
 	"KitchenPlace_PutKitchen.h"
+	"KitchenPlace_ERROR.h"
 
 1553943381 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_Find.h
 	"KitchenPlace.h"
@@ -64,20 +66,89 @@
 1554194492 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_Find.cpp
 	"KitchenPlace_Find_WallSides.h"
 
-1555346209 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ManageDirections.cpp
+1555346363 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ManageDirections.cpp
 	"KitchenPlace_ManageDirections.h"
 
-1555346158 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ManageDirections.h
+1555346363 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ManageDirections.h
 	"KitchenPlace.h"
 	<iostream>
 	<optional>
 	<stack>
 
-1555345837 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_FindShortWays.h
+1555346363 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_FindShortWays.h
 	<list>
 	"KitchenPlace.h"
 	"KitchenPlace_ManageDirections.h"
 
-1555345837 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_FindShortWays.cpp
+1555346363 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_FindShortWays.cpp
 	"KitchenPlace_FindShortWays.h"
+
+1564035373 /home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ERROR.h
+	<iostream>
+	<string>
+
+1564035387 source:/home/administrator/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ERROR.cpp
+	"KitchenPlace_ERROR.h"
+
+1564035474 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace.cpp
+	"KitchenPlace_ReadMap.h"
+	"KitchenPlace_MapEmployees.h"
+	"KitchenPlace_ManageDirections.h"
+	"KitchenPlace_FindShortWays.h"
+	"KitchenPlace_PutKitchen.h"
+	"KitchenPlace_ERROR.h"
+
+1555346363 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ReadMap.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	<filesystem>
+
+1555346363 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_MapEmployees.h
+	<string>
+	"KitchenPlace.h"
+
+1555346362 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace.h
+	<limits>
+	<vector>
+	<cinttypes>
+
+1555346363 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ManageDirections.h
+	"KitchenPlace.h"
+	<iostream>
+	<optional>
+	<stack>
+
+1555346363 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_FindShortWays.h
+	<list>
+	"KitchenPlace.h"
+	"KitchenPlace_ManageDirections.h"
+
+1555346362 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_PutKitchen.h
+	<iostream>
+	"KitchenPlace.h"
+
+1564035373 /home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ERROR.h
+	<iostream>
+	<string>
+
+1564035387 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ERROR.cpp
+	"KitchenPlace_ERROR.h"
+
+1555346363 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_FindShortWays.cpp
+	"KitchenPlace_FindShortWays.h"
+
+1555346363 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ManageDirections.cpp
+	"KitchenPlace_ManageDirections.h"
+
+1555346363 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_MapEmployees.cpp
+	"KitchenPlace_MapEmployees.h"
+
+1555346363 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_PutKitchen.cpp
+	"KitchenPlace_PutKitchen.h"
+
+1564035618 source:/home/thearquitect/Desktop/C++_Projects/KitchenPlace/KitchenPlace_ReadMap.cpp
+	"KitchenPlace_ReadMap.h"
+	"KitchenPlace_ERROR.h"
 

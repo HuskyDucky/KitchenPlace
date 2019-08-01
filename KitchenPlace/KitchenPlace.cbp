@@ -18,12 +18,11 @@
 					<Add option="-Wall" />
 					<Add option="-std=c++1z" />
 					<Add option="-m64" />
+					<Add option="-fno-exceptions" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add option="-m64" />
-					<Add option="-lstdc++fs" />
-					<Add option="-lcurl" />
 					<Add option="-pthread" />
 				</Linker>
 			</Target>
@@ -34,6 +33,8 @@
 		</Compiler>
 		<Unit filename="KitchenPlace.cpp" />
 		<Unit filename="KitchenPlace.h" />
+		<Unit filename="KitchenPlace_ERROR.cpp" />
+		<Unit filename="KitchenPlace_ERROR.h" />
 		<Unit filename="KitchenPlace_FindShortWays.cpp" />
 		<Unit filename="KitchenPlace_FindShortWays.h" />
 		<Unit filename="KitchenPlace_ManageDirections.cpp" />

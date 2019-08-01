@@ -1,7 +1,7 @@
 /**
     File    : KitchenPlace.cpp
     Author  : Menashe Rosemberg
-    Created : 2019.03.28            Version: 20190415.1
+    Created : 2019.03.28            Version: 20190415.2
 
     Find the best places to install the kitchen on room nearest to all employees
 
@@ -16,14 +16,13 @@
 #include "KitchenPlace_ManageDirections.h"
 #include "KitchenPlace_FindShortWays.h"
 #include "KitchenPlace_PutKitchen.h"
+#include "KitchenPlace_ERROR.h"
 
 static void CheckEmptySpaces(const Matrix& tMap) {
        Directions D(tMap);
 
-       if (D.HasUnreachablePlace()) {
-          cerr << "\n\nThis Map has unreachable place(s)\n" << endl;
-          abort();
-       }
+       if (D.HasUnreachablePlace())
+          ERROR("\n\nThis Map has unreachable place(s)\n");
 }
 
 int main() {
